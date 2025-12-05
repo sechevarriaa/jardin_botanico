@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="web/zonas.xsl"?>
+<!--   
+    Autor: Saioa Echevarria Ballesteros 
+    Fecha: 05/12/2025  
+    Módulo: LMSGI  
+    UD: 4 – Tarea Evaluativa 2
+    Descripción: XML del Jardín Botánico
+    Contiene información sobre Zonas, Plantas y Actividades.
+    Se enlaza con el XSLT 'zonas.xsl' para la transformación a HTML.
+-->
+
+<jardinBotanico>
+
+  <!-- =====================================
+       Sección 1: Zonas
+       Contiene información de cada zona del jardín, incluyendo:
+  ===================================== -->
+  <zonas>
+    <zona codigo="Z-001" tipo="Invernadero Tropical">
+      <nombre>Zona Tropical</nombre>
+      <descripcion>Plantas tropicales de distintas regiones del mundo.</descripcion>
+      <ubicacion>Planta Baja</ubicacion>
+      <horarioapertura>10:00</horarioapertura>
+      <horariocierre>20:00</horariocierre>
+    </zona>
+
+    <zona codigo="Z-002" tipo="Cactaceas">
+      <nombre>Jardín de Cactus</nombre>
+      <descripcion>Cactus y suculentas de diversas formas y tamaños.</descripcion>
+      <ubicacion>Exterior Sur</ubicacion>
+      <horarioapertura>14:00</horarioapertura>
+      <horariocierre>20:00</horariocierre>
+    </zona>
+
+    <zona codigo="Z-003" tipo="Invernadero Mediterráneo">
+      <nombre>Plantas Mediterraneas</nombre>
+      <descripcion>Cactus y suculentas de diversas formas y tamaños.</descripcion>
+      <ubicacion>Exterior Sur</ubicacion>
+      <horarioapertura>9:00</horarioapertura>
+      <horariocierre>19:30</horariocierre>
+    </zona>
+  </zonas>
+
+  <!-- =====================================
+       Sección 2: Plantas
+       Contiene información detallada de cada planta del jardín:
+  ===================================== -->
+  <plantas>
+    <planta zona="Z-001" foto="OrquideaVioleta.jpg" familia="Orchidaceae">
+        <nombreComun>Orquídea Violeta</nombreComun>
+        <nombreCientifico>Vanda coerulea</nombreCientifico>
+        <epocaFloracion>Junio - Agosto</epocaFloracion>
+        <frecriego>Diario</frecriego>
+        <luminosidad>Baja</luminosidad>
+    </planta>
+
+    <planta zona="Z-002" foto="CactusBola.jpg" familia="Cactaceae">
+        <nombreComun>Cactus Bola</nombreComun>
+        <nombreCientifico>Echinocactus grusonii</nombreCientifico>
+        <epocaFloracion>Julio</epocaFloracion>
+        <frecriego>Semanal</frecriego>
+        <luminosidad>Alta</luminosidad>
+    </planta>
+
+    <planta zona="Z-001"  foto="PalmeraImperial.jpg" familia="Arecaceae">
+        <nombreComun>Palmera Imperial</nombreComun>
+        <nombreCientifico>Roystonea regia</nombreCientifico>
+        <epocaFloracion>Primavera</epocaFloracion>
+        <frecriego>Diario</frecriego>
+        <luminosidad>Alta</luminosidad>
+    </planta>
+  </plantas>
+
+  <!-- =====================================
+       Sección 3: Actividades
+       Incluye información sobre actividades organizadas en el jardín:
+  ===================================== -->
+  <actividades>
+    <actividad sala="InvernaderoTropical">
+      <titulo>Visita Guiada Plantas Tropicales</titulo>
+      <plazas>30</plazas>
+      <fechaHora>2025-11-10T11:00:00</fechaHora>
+      <descripcion>Recorrido guiado explicando especies tropicales y sus cuidados.</descripcion>
+      <responsables>
+        <responsable dni="44658958D">
+            <nomresponsable>Mireia Martinez</nomresponsable>
+            <telefono>+34-942-345-900</telefono>
+            <email>mmartinez@jardinbotanico.local</email>
+        </responsable>
+        <responsable dni="15478589T">
+            <nomresponsable>Pedro Iturbe</nomresponsable>
+            <telefono>+34-942-345-900</telefono>
+            <email>piturbe@jardinbotanico.local</email>
+        </responsable>
+      </responsables>
+    </actividad>
+
+    <actividad sala="JardínExterior">
+      <titulo>Taller de Suculentas</titulo>
+      <plazas>20</plazas>
+      <fechaHora>2025-06-15T10:00:00</fechaHora>
+      <descripcion>Aprende a plantar y cuidar tus suculentas.</descripcion>
+      <responsables>
+        <responsable dni="44658458D">
+            <nomresponsable>Nerea Arana</nomresponsable>
+            <telefono>+34-943-345-901</telefono>
+            <email>narana@jardinbotanico.local</email>
+        </responsable>
+      </responsables>
+    </actividad>
+
+    <actividad sala="Auditorio">
+      <titulo>Charla sobre Biodiversidad</titulo>
+      <plazas>50</plazas>
+      <fechaHora>2025-11-20T18:00:00</fechaHora>
+      <descripcion>Charla educativa sobre conservación de especies vegetales.</descripcion>
+      <responsables>
+        <responsable dni="22658958N">
+            <nomresponsable>María López</nomresponsable>
+            <telefono>+34-912-345-902</telefono>
+            <email>mlopez@jardinbotanico.local</email>
+        </responsable>
+      </responsables>
+    </actividad>
+  </actividades>
+
+</jardinBotanico>
